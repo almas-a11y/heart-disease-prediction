@@ -9,9 +9,9 @@ Heart disease is one of the leading causes of death worldwide. This project buil
 | Model | AUC-ROC | Accuracy | Recall |
 |---|---|---|---|
 | **Ridge (L2)** | **0.9000** | **0.7222** | **0.4167** |
-| Lasso (L1) | see notebook | see notebook | see notebook |
-| Logistic Regression (baseline) | see notebook | see notebook | see notebook |
-| Polynomial + Ridge | see notebook | see notebook | see notebook |
+| Lasso (L1) | 0.8931 | 0.8519 | 0.9167 |
+| Logistic Regression (baseline) | 0.8917 | 0.8519 | 0.9167 |
+| Polynomial + Ridge | 0.8764 | 0.8148 | 0.7917 |
 
 Ridge (L2) came out on top. All regularized models beat the plain baseline, showing regularization helps even on a small dataset. The strongest predictors across the interpretable models were `thalach` (max heart rate), `cp` (chest pain type), and `ca` (number of major vessels), which lines up with established clinical risk factors.
 
